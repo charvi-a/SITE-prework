@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Hello!</title>
+    <p id="timer" style="font-size:20px">
+    </p>
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>  
+  <body>
+    <h1>Light and Sound Memory Game </h1>
+    
+    <p>
+      Welcome to the game! Repeat back the pattern which is played by clicking on the buttons.
+    </p>
+    
+
+    <button id="startBtn" onclick="startGame()">Start</button>
+    <button id="stopBtn" class="hidden" onclick="stopGame()">Stop</button>
+ 
+
+    
+    <div id="gameButtonArea">
+    <button id="button1" onmousedown="startTone(1)" onmouseup="stopTone()" onclick="guess(1)"></button>
+    <button id="button2" onmousedown="startTone(2)" onmouseup="stopTone()" onclick="guess(2)"></button>
+    <button id="button3" onmousedown="startTone(3)" onmouseup="stopTone()" onclick="guess(3)"></button>
+    <button id="button4" onmousedown="startTone(4)" onmouseup="stopTone()" onclick="guess(4)"></button>
+    <button id="button5" onmousedown="startTone(5)" onmouseup="stopTone()" onclick="guess(5)"></button>
+    <button id="button6" onmousedown="startTone(6)" onmouseup="stopTone()" onclick="guess(6)"></button>  
+    </div>
+    
+    <div id="images">
+      <img src="https://cdn.glitch.com/148c24fc-7b64-4f15-a324-85565681d3fc%2Fapple.jpg?v=1614514854785" width="1000" height="100" id="apple" onclick="guess(1)" />
+      <img src="https://cdn.glitch.com/148c24fc-7b64-4f15-a324-85565681d3fc%2Fball.jpg?v=1614514859163" width="100" height="100" id="ball" onclick="guess(2)" />
+      <img src="https://cdn.glitch.com/148c24fc-7b64-4f15-a324-85565681d3fc%2Fcat.jpg?v=1614514863639" width="100" height="100" id="cat" onclick="guess(3)">
+      <img src="https://cdn.glitch.com/148c24fc-7b64-4f15-a324-85565681d3fc%2Fcherry.jpg?v=1614514636009" width="100" height="100" id="cherry" onclick="guess(4)">
+      <img src="https://cdn.glitch.com/148c24fc-7b64-4f15-a324-85565681d3fc%2Fflower.jpg?v=1614514903174" width="100" height="100" id="flower" onclick="guess(5)">
+      <img src="https://cdn.glitch.com/148c24fc-7b64-4f15-a324-85565681d3fc%2Forange.jpg?v=1614514866196" width="100" height="100" id="orange" onclick="guess(6)">
+    </div>
+
+    
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js" defer></script>
+  </body>
+</html>

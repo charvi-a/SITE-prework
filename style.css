@@ -1,0 +1,72 @@
+/* CSS files add styling rules to your content */
+
+body {
+  font-family: Georgia, arial, sans-serif;
+  margin: 2em;
+  background-color: slategrey;
+  color: white;
+}
+
+h1 {
+  font-family: Georgia, arial, sans-serif; 
+}
+
+button{
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#gameButtonArea > button {
+  width:200px;
+  height:200px;
+  margin:7px;
+}
+
+.hidden {
+  display: none;
+}
+
+#button1 {
+    background: lightgreen;
+}
+#button2 {
+    background: lightblue;
+}
+#button3 {
+    background: pink;
+}
+#button4 {
+    background: lightyellow;
+}
+#button5 {
+    background: #FF00FF;
+}
+#button6 {
+    background: #00FFFF;
+}
+
+
+#button1:active, #button1.lit{
+    background:url("https://cdn.glitch.com/148c24fc-7b64-4f15-a324-85565681d3fc%2Fapple.jpg?v=1614514854785");
+}
+#button2:active, #button2.lit {
+    background:url("https://cdn.glitch.com/148c24fc-7b64-4f15-a324-85565681d3fc%2Fball.jpg?v=1614514859163");
+}
+#button3:active, #button3.lit{
+    background: url("https://cdn.glitch.com/148c24fc-7b64-4f15-a324-85565681d3fc%2Fcat.jpg?v=1614514863639");
+}
+#button4:active, #button4.lit {
+    background: url("https://cdn.glitch.com/148c24fc-7b64-4f15-a324-85565681d3fc%2Fcherry.jpg?v=1614514636009");
+}
+#button5:active, #button5.lit {
+  background:	url("https://cdn.glitch.com/148c24fc-7b64-4f15-a324-85565681d3fc%2Fflower.jpg?v=1614514903174");
+}
+#button6:active, #button6.lit {
+    background:	url("https://cdn.glitch.com/148c24fc-7b64-4f15-a324-85565681d3fc%2Forange.jpg?v=1614514866196");
+}
+
+#images{
+    display: none;
+}
+
